@@ -1,0 +1,186 @@
+---
+title: "SAE script"
+output: html_document
+date: "2024-08-08"
+Author: Xiaomeng Wu 
+---
+```{r ntlt}
+"""
+This is the script of SAE in Sri Lanka. 
+It works on my side with very small samples, instead of the whole country. 
+You may check it, but probably do not test it. 
+It may take hours and a great amount of RAM to run. 
+"""
+```
+
+
+```{r ntlt}
+library(raster)
+library(sf)
+library(dplyr)
+library(tidyverse)
+library(ggplot2)
+library(ggsci)
+library(ggspatial)
+library(tidyr)
+
+## read the administration layer (on ds level)
+lk_bd <- st_read("path/to/lk.shp")
+lk_ds <- st_read("path/to/lka_adm3_Allindicators_census.shp")
+lk_ds <- lk_ds[,c(13,11,10)]
+##nightlight
+download.file(url = "https://eogdata.mines.edu/nighttime_light/annual/v22/2023/VNL_npp_2023_global_vcmslcfg_v2_c202402081600.average_masked.dat.tif.gz")
+#after decompressing
+ntlt_r <- raster("VNL_npp_2023_global_vcmslcfg_v2_c202402081600.average_masked.dat.tif")
+ntlt_lk <- crop(ntlt_r, lk_bd) %>% mask(lk_bd)
+rm(ntlt_r)
+ntlt_to_ds <- function(df){
+  # ntlt_min <- raster::extract(ntlt_lk, lk_ds, fun = min, na.rm = T)
+  # print("ntlt_min")
+  # ntlt_max <- raster::extract(ntlt_lk, lk_ds, fun = max, na.rm = T)
+  # print("ntlt_max")
+  # ntlt_range <- raster::extract(ntlt_lk, lk_ds, fun = range, na.rm = T)
+  # print("range")
+  ntlt_mean <- raster::extract(ntlt_lk, lk_ds, fun = mean, na.rm = T)
+  print("mean")
+  # ntlt_std <- raster::extract(ntlt_lk, lk_ds, fun = stdev, na.rm = T)
+  # print("std")
+  # ntlt_sum <- raster::extract(ntlt_lk, lk_ds, fun = sum, na.rm = T)
+  # print("sum")
+  # ntlt_variety <- raster::extract(ntlt_lk, lk_ds, fun = variety, na.rm = T)
+  # print("variety")
+  # ntlt_majority <- raster::extract(ntlt_lk, lk_ds, fun = majority, na.rm = T)
+  # print("majority")
+  # ntlt_minority <- raster::extract(ntlt_lk, lk_ds, fun = minority, na.rm = T)
+  # print("minority")
+  # ntlt_median <- raster::extract(ntlt_lk, lk_ds, fun = median, na.rm = T)
+  # print("median")
+  df <- cbind(df,ntlt_mean)
+}
+lk_ntlt <- ntlt_to_ds(lk_ds)
+write.csv(lk_ntlt, "ntlt_lk.csv")
+```
+
+```{r road}
+library(sf)
+library(raster)
+library(dplyr)
+
+lk_road <- st_read("path/to/roads_from_OSM.shp")
+target_crs <- st_crs(lk_road)
+lk_bd <- st_make_valid(lk_bd)
+lk_bd_road <- st_transform(lk_bd, target_crs )
+lk_road <- st_make_valid(lk_road)
+# Create a 100m x 100m grid
+grid_size <- 100  # grid size in meters, turn it into 100 if you like. it runs really, really, really slow
+country_bbox <- st_bbox(lk_bd_road)
+grid <- st_make_grid(lk_bd_road, cellsize = grid_size, square = TRUE)
+grid_sf <- st_sf(grid_id = 1:length(grid), geometry = grid)
+grid_sf <- st_transform(grid_sf,  target_crs)
+grid_sf <- st_make_valid(grid_sf)
+# Ensure the CRS (coordinate reference system) matches
+
+# Identify grids with road access
+grid_with_roads <- st_intersects(grid_sf, lk_road, sparse = FALSE)
+grid_sf$road_access <- apply(grid_with_roads, 1, any)
+lk_ds_road <- st_transform(lk_ds, target_crs)
+grid_ds <- st_intersection(grid_sf, lk_ds_road)
+division_road_access <- grid_ds %>%
+  group_by(dsd_n_1) %>%  # assuming 'DIVISION_NAME' is the division identifier
+  summarize(
+    total_grids = n(),
+    grids_with_road = sum(road_access),
+    road_access_percentage = (grids_with_road / total_grids) * 100
+  )
+write.csv(division_road_access, "road_lk.csv")
+```
+
+
+
+```{r house}
+library(sf)
+library(raster)
+library(dplyr)
+lk_hs <- st_read("path/to/houses_greater_100sqm.shp")
+lk_hs <- st_make_valid(lk_hs)
+bbox <- st_bbox(lk_bd_road)  # Get the bounding box of the country
+grid <- st_make_grid(st_as_sfc(bbox), cellsize = c(100, 100))
+grid_sf <- st_sf(geometry = grid)
+
+grid_with_hs <- st_intersects(grid_sf, lk_hs, sparse = FALSE)
+grid_sf$has_house <- rowSums(grid_with_houses) > 0
+grid_ds <- st_join(grid_sf, lk_ds_road)
+
+housing_availability <- grid_ds %>%
+    group_by(dsd_n_1) %>%  # Replace Division_ID with the actual ID column name in your divisions shapefile
+    summarise(
+      total_grids = n(),
+      grids_with_houses = sum(has_house),
+      percentage_with_houses = (grids_with_houses / total_grids) * 100
+    )
+write.csv(housing_availability, "housing_lk.csv")
+```
+
+```{r EVI}
+library(dplyr)
+library(sf)
+library(raster)
+library(ggplot2)
+library(tidyr)
+library(ggsci)
+library(R.utils)
+library(httr)
+library(terra)
+library(stringr)
+
+## EVI downloaded from https://ladsweb.modaps.eosdis.nasa.gov/
+## list allfiles in the folder
+evi_hdf <- list.files(path = "path/to/EVI",  pattern = "\\.hdf$", full.names = TRUE)
+evi_list <- list()
+for (hdf_file in evi_hdf) {
+  file_name <- basename(hdf_file)
+  file_name <- substr(file_name, 1, nchar(file_name)-4)
+  hdf_raster <- rast(hdf_file)
+  subdatasets <- names(hdf_raster)
+  evi_raster <- hdf_raster[[grep("EVI", subdatasets)]]
+  output_tif <- paste0("path/to/EVI", file_name, ".tif")
+  writeRaster(evi_raster, output_tif, overwrite = TRUE)
+}
+
+tif_files <- list.files("path/to/EVI", pattern = "\\.tif$", full.names = TRUE)
+raster_list <- lapply(tif_files, raster)
+full_images <- list()
+
+for (i in seq(1, length(raster_list), by = 2)) {
+  # Stack and merge two consecutive rasters
+  full_image <- mosaic(raster_list[[i]], raster_list[[i+1]], fun = "mean")
+  full_images[[length(full_images) + 1]] <- full_image
+}
+
+lk_bd_evi <- st_transform(lk_bd, crs = st_crs(full_images[[1]]))
+lk_ds_evi <- st_transform(lk_ds, crs = st_crs(full_images[[1]]))
+masked_images <- lapply(full_images, function(img) {
+  cropped_img <- crop(img, lk_bd_evi)
+  masked_img <- mask(cropped_img, lk_bd_evi)
+  return(masked_img)
+})
+
+mean_evi <- sapply(masked_images, function(img) {
+  extract(img, lk_ds_evi, fun = mean, na.rm = TRUE)
+})
+
+for (stat in names(mean_evi[[1]])) {
+  lk_bd_evi[[paste0(stat, "_Mean")]] <- rowMeans(sapply(stats_list, `[[`, stat), na.rm = TRUE)
+  lk_bd_evi[[paste0(stat, "_Min")]] <- apply(sapply(stats_list, `[[`, stat), 1, min, na.rm = TRUE)
+  lk_bd_evi[[paste0(stat, "_Max")]] <- apply(sapply(stats_list, `[[`, stat), 1, max, na.rm = TRUE)
+  lk_bd_evi[[paste0(stat, "_Sum")]] <- rowSums(sapply(stats_list, `[[`, stat), na.rm = TRUE)
+  lk_bd_evi[[paste0(stat, "_StdDev")]] <- apply(sapply(stats_list, `[[`, stat), 1, sd, na.rm = TRUE)
+  lk_bd_evi[[paste0(stat, "_Range")]] <- apply(sapply(stats_list, `[[`, stat), 1, function(x) diff(range(x, na.rm = TRUE)))
+  lk_bd_evif[[paste0(stat, "_Median")]] <- apply(sapply(stats_list, `[[`, stat), 1, median, na.rm = TRUE)
+  lk_bd_evi[[paste0(stat, "_Variety")]] <- apply(sapply(stats_list, `[[`, stat), 1, function(x) length(unique(x)))
+  lk_bd_evi[[paste0(stat, "_Majority")]] <- apply(sapply(stats_list, `[[`, stat), 1, function(x) as.numeric(names(sort(table(x), decreasing = TRUE)[1])))
+  lk_bd_evi[[paste0(stat, "_Minority")]] <- apply(sapply(stats_list, `[[`, stat), 1, function(x) as.numeric(names(sort(table(x), decreasing = FALSE)[1])))
+}
+write.csv(lk_bd_evi, "evi_lk.csv")
+```
+

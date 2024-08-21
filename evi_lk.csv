@@ -1,0 +1,332 @@
+"","dsd_n_1","district_n","province_n","EVI_ds"
+"1","Addalachchenai","Ampara","Eastern",35466299.6911713
+"2","Akurana","Kandy","Central",49222465.2777778
+"3","Akuressa","Matara","Southern",50199349.6661898
+"4","Agalawatta","Kalutara","Western",48766381.2099359
+"5","Badulla","Badulla","Uva",47467014.4927536
+"6","Akkaraipattu","Ampara","Eastern",35318236.1241401
+"7","Akmeemana","Galle","Southern",48749630.4873296
+"8","Balangoda","Rathnapura","Sabaragamuwa",49618030.8930426
+"9","Alawwa","Kurunegala","North Western",48198398.1788079
+"10","Alayadiwembu","Ampara","Eastern",33399926.0911215
+"11","Ambagamuwa","Nuwara Eliya","Central",44077370.6959707
+"12","Damana","Ampara","Eastern",44990468.102257
+"13","Ambalangoda","Galle","Southern",46999320.7716053
+"14","Ambalantota","Hambantota","Southern",42719010.477054
+"15","Ambanganga Korale","Matale","Central",52250923.6375158
+"16","Ambanpola","Kurunegala","North Western",44495594.4221003
+"17","Ampara","Ampara","Eastern",43383965.0596054
+"18","Anamaduwa","Puttalam","North Western",43705070.7154742
+"19","Angunakolapelessa","Hambantota","Southern",46663723.2840115
+"20","Arachchikattuwa","Puttalam","North Western",43457524.1243294
+"21","Dehiwala","Colombo","Western",22263278.8535829
+"22","Aranayaka","Kegalle","Sabaragamuwa",49153335.4774157
+"23","Athuraliya","Matara","Southern",50202598.3796296
+"24","Attanagalla","Gampaha","Western",44601824.6527778
+"25","Ayagama","Rathnapura","Sabaragamuwa",47683517.7687809
+"26","Badalkumbura","Moneragala","Uva",56265101.8099547
+"27","Baddegama","Galle","Southern",49468979.2852625
+"28","Balapitiya","Galle","Southern",41060080.2883666
+"29","Bamunakotuwa","Kurunegala","North Western",47954053.2496782
+"30","Bandaragama","Kalutara","Western",42816487.2034956
+"31","Bandarawela","Badulla","Uva",48041058.0808081
+"32","Beliatta","Hambantota","Southern",53069258.6805556
+"33","Delthota","Kandy","Central",47050836.8200837
+"34","Bentota","Galle","Southern",44744156.1758296
+"35","Beruwala","Kalutara","Western",44059810.858044
+"36","Bibile","Moneragala","Uva",47671851.2378426
+"37","Eravur Town","Batticaloa","Eastern",31443000
+"38","Bingiriya","Kurunegala","North Western",47024868.2297346
+"39","Vadamaradchy South-West (Karaveddy)","Jaffna","Northern",26665354.7760978
+"40","Biyagama","Gampaha","Western",35927556.8181818
+"41","Bope-Poddala","Galle","Southern",44671335.7843137
+"42","Delft","Jaffna","Northern",31957706.3443362
+"43","Bulathkohupitiya","Kegalle","Sabaragamuwa",48776890.7035176
+"44","Bulathsinhala","Kalutara","Western",49064329.1751527
+"45","Buttala","Moneragala","Uva",45831697.9242416
+"46","Chilaw","Puttalam","North Western",40108244.9382727
+"47","Colombo","Colombo","Western",16499488.4575299
+"48","Dambulla","Matale","Central",45417401.5932521
+"49","Dankotuwa","Puttalam","North Western",44082322.769953
+"50","Dehiattakandiya","Ampara","Eastern",40626274.5202309
+"51","Dehiovita","Kegalle","Sabaragamuwa",50361271.6629793
+"52","Deraniyagala","Kegalle","Sabaragamuwa",45481926.4846743
+"53","Devinuwara","Matara","Southern",48131293.3172457
+"54","Dickwella","Matara","Southern",50689914.99107
+"55","Dimbulagala","Polonnaruwa","North Central",42507525.3651286
+"56","Divulapitiya","Gampaha","Western",44742188.6923344
+"57","Dodangoda","Kalutara","Western",47873962.2790404
+"58","Doluwa","Kandy","Central",47123652.9558405
+"59","Kobeigane","Kurunegala","North Western",46494537.1878393
+"60","Dompe","Gampaha","Western",46413330.8442851
+"61","Eheliyagoda","Rathnapura","Sabaragamuwa",49603972.0149254
+"62","Ehetuwewa","Kurunegala","North Western",43993464.3734644
+"63","Koralai Pattu (Valachchenai)","Batticaloa","Eastern",32672192.4536387
+"64","Elahera","Polonnaruwa","North Central",44785002.2617612
+"65","Koralai Pattu Central","Batticaloa","Eastern",34415563.1643096
+"66","Elapatha","Rathnapura","Sabaragamuwa",48333754.1050903
+"67","Galnewa","Anuradhapura","North Central",45186239.8373984
+"68","Ella","Badulla","Uva",50215995.460441
+"69","Gomarankadawala","Trincomalee","Eastern",42050673.1341392
+"70","Elpitiya","Galle","Southern",48864080.2987862
+"71","Embilipitiya","Rathnapura","Sabaragamuwa",48694762.2764905
+"72","Eravur Pattu","Batticaloa","Eastern",40403112.2341256
+"73","Koralai Pattu North (Vaharai)","Batticaloa","Eastern",37284066.7308164
+"74","Galenbindunuwewa","Anuradhapura","North Central",41435273.4759095
+"75","Gonapeenuwala","Galle","Southern",47592036.3923011
+"76","Galewela","Matale","Central",47614930.4058908
+"77","Habaraduwa","Galle","Southern",44030068.9574442
+"78","Galgamuwa","Kurunegala","North Western",44201954.5438691
+"79","Galigamuwa","Kegalle","Sabaragamuwa",49449542.4421884
+"80","Galle Four Gravets","Galle","Southern",38007247.4747228
+"81","Gampaha","Gampaha","Western",38762164.3247463
+"82","Ganewatta","Kurunegala","North Western",46009092.5924399
+"83","Harispattuwa","Kandy","Central",47730871.3768116
+"84","Ganga Ihala Korale","Kandy","Central",46959830.1358913
+"85","Giribawa","Kurunegala","North Western",42558355.9072195
+"86","Jaffna","Jaffna","Northern",28436560.1632604
+"87","Godakawela","Rathnapura","Sabaragamuwa",52285543.0327869
+"88","Hakmana","Matara","Southern",52546068.6728395
+"89","Haldummulla","Badulla","Uva",47709438.4900138
+"90","Hali-Ela","Badulla","Uva",50289060.9217172
+"91","Hambantota","Hambantota","Southern",41762293.3680447
+"92","Hanguranketha","Nuwara Eliya","Central",45887535.6813996
+"93","Haputale","Badulla","Uva",47689114.4240571
+"94","Kalmunai","Ampara","Eastern",28821697.7776233
+"95","Hatharaliyadda","Kandy","Central",53129716.7216722
+"96","Hikkaduwa","Galle","Southern",44972281.2125292
+"97","Hingurakgoda","Polonnaruwa","North Central",43811721.20909
+"98","Kalmunai Tamil Division","Ampara","Eastern",31522112.0501824
+"99","Kalpitiya","Puttalam","North Western",33058582.4562866
+"100","Homagama","Colombo","Western",40730466.1270983
+"101","Horana","Kalutara","Western",45885392.8571429
+"102","Horowpothana","Anuradhapura","North Central",43136852.7869461
+"103","Ibbagamuwa","Kurunegala","North Western",48602432.7956989
+"104","Imaduwa","Galle","Southern",49377890.258216
+"105","Imbulpe","Rathnapura","Sabaragamuwa",47010551.2767138
+"106","Ingiriya","Kalutara","Western",48434535.6598017
+"107","Ipalogama","Anuradhapura","North Central",45235030.8408862
+"108","Irakkamam","Ampara","Eastern",36022070.3916149
+"109","Island North (Kayts)","Jaffna","Northern",28904827.4175546
+"110","Island South (Velanai)","Jaffna","Northern",25883087.7022826
+"111","Ja-Ela","Gampaha","Western",37053916.5499616
+"112","Kaduwela","Colombo","Western",36067532.2061192
+"113","Karainagar","Jaffna","Northern",31445001.077688
+"114","Kahatagasdigiliya","Anuradhapura","North Central",42250051.050175
+"115","Karaitheevu","Ampara","Eastern",33519815.910974
+"116","Kahawatta","Rathnapura","Sabaragamuwa",50711071.7975207
+"117","Kalawana","Rathnapura","Sabaragamuwa",43090769.6759259
+"118","Kattankudy","Batticaloa","Eastern",23016158.8274199
+"119","Kalutara","Kalutara","Western",43517996.5071577
+"120","Kamburupitiya","Matara","Southern",48173132.9849013
+"121","Kandaketiya","Badulla","Uva",50045398.3381463
+"122","Kandavalai","Kilinochchi","Northern",30903499.1327542
+"123","Kandy Four Gravets & Gangawata Korale","Kandy","Central",41692198.4848485
+"124","Kanthalai","Trincomalee","Eastern",40526079.9008609
+"125","Karachchi","Kilinochchi","Northern",35490607.3570201
+"126","Karandeniya","Galle","Southern",46060329.736211
+"127","Karuwalagaswewa","Puttalam","North Western",44154602.1369324
+"128","Katana","Gampaha","Western",39234227.2058394
+"129","Katharagama","Moneragala","Uva",44739887.7950146
+"130","Katuwana","Hambantota","Southern",55222044.057377
+"131","Valikamam North","Jaffna","Northern",37301834.6296776
+"132","Kebithigollewa","Anuradhapura","North Central",46936252.4654832
+"133","Kegalle","Kegalle","Sabaragamuwa",49284970.2970297
+"134","Kekirawa","Anuradhapura","North Central",43138277.7657479
+"135","Kelaniya","Gampaha","Western",28382832.4915825
+"136","Kesbewa","Colombo","Western",35238057.0175439
+"137","Kinniya","Trincomalee","Eastern",37095926.2488311
+"138","Kiriella","Rathnapura","Sabaragamuwa",49965600.0905797
+"139","Paduwasnuwara East","Kurunegala","North Western",48317019.7325506
+"140","Kirinda Puhulwella","Matara","Southern",51557268.5185185
+"141","Kolonna","Rathnapura","Sabaragamuwa",53264690.9233177
+"142","Kolonnawa","Colombo","Western",28294364.4067797
+"143","Koralai Pattu  West (Oddamavadi)","Batticaloa","Eastern",35035568.9964158
+"144","Koralai Pattu South (Kiran)","Batticaloa","Eastern",39205455.783997
+"145","Kotapola","Matara","Southern",49374176.5991259
+"146","Kotavehera","Kurunegala","North Western",44028945.6743833
+"147","Kundasale","Kandy","Central",46731552.540913
+"148","Kothmale","Nuwara Eliya","Central",45390701.6077682
+"149","Kuchchaveli","Trincomalee","Eastern",39380099.7734498
+"150","Kuliyapitiya East","Kurunegala","North Western",46407657.7212806
+"151","Manmunai Pattu (Araipattai)","Batticaloa","Eastern",31378961.7014774
+"152","Kuliyapitiya West","Kurunegala","North Western",46539775.9331597
+"153","Maspotha","Kurunegala","North Western",45897734.204793
+"154","Kurunegala","Kurunegala","North Western",46417924.0412979
+"155","Kuruvita","Rathnapura","Sabaragamuwa",48332774.0147783
+"156","Laggala-Pallegama","Matale","Central",46680868.0555556
+"157","Lahugala","Ampara","Eastern",44219608.5947522
+"158","Lankapura","Polonnaruwa","North Central",43357121.9382322
+"159","Lunugala","Badulla","Uva",49927588.612368
+"160","Lunugamvehera","Hambantota","Southern",43970240.7786141
+"161","Madampe","Puttalam","North Western",45595892.8571429
+"162","Madhu","Mannar","Northern",42284353.3611322
+"163","Madulla","Moneragala","Uva",47889266.2779931
+"164","Madurawala","Kalutara","Western",48201134.180791
+"165","Mahakumbukkadawala","Puttalam","North Western",44369100.591716
+"166","Mahaoya","Ampara","Eastern",44716232.9323846
+"167","Mahara","Gampaha","Western",41544067.812269
+"168","Maharagama","Colombo","Western",31772247.1910112
+"169","Mihinthale","Anuradhapura","North Central",41249273.5099147
+"170","Mahawewa","Puttalam","North Western",42955186.3862725
+"171","Moratuwa","Colombo","Western",24440113.3347706
+"172","Mahawilachchiya","Anuradhapura","North Central",41485127.2068779
+"173","Mahiyanganaya","Badulla","Uva",43050962.5005881
+"174","Maho","Kurunegala","North Western",44280934.5553433
+"175","Malimbada","Matara","Southern",46266158.9805825
+"176","Mallawapitiya","Kurunegala","North Western",49392442.9824561
+"177","Manmunai North","Batticaloa","Eastern",30042588.3375644
+"178","Manmunai South-West","Batticaloa","Eastern",38224408.3781886
+"179","Manmunai South & Eruvil pattu","Batticaloa","Eastern",31370052.221348
+"180","Manmunai West","Batticaloa","Eastern",36351977.1073788
+"181","Mannar Town","Mannar","Northern",29485596.0375303
+"182","Manthai East","Mullaitivu","Northern",40881315.3310105
+"183","Manthai West","Mannar","Northern",37029522.2083406
+"184","Maritimepattu","Mullaitivu","Northern",41792495.4955451
+"185","Matale","Matale","Central",53145652.6548673
+"186","Matara Four Gravets","Matara","Southern",42496576.1608968
+"187","Mathugama","Kalutara","Western",48208551.9017433
+"188","Mawanella","Kegalle","Sabaragamuwa",48838484.9191542
+"189","Mawathagama","Kurunegala","North Western",51035575.6686236
+"190","Medadumbara","Kandy","Central",45811310.9410431
+"191","Morawewa","Trincomalee","Eastern",44290696.5608466
+"192","Medagama","Moneragala","Uva",52395006.2463257
+"193","Medawachchiya","Anuradhapura","North Central",42145740.0578453
+"194","Medirigiriya","Polonnaruwa","North Central",40819599.6813462
+"195","Meegahakivula","Badulla","Uva",48782312.2529644
+"196","Millaniya","Kalutara","Western",46008895.4505687
+"197","Minipe","Kandy","Central",50107513.9007699
+"198","Minuwangoda","Gampaha","Western",42893486.9123932
+"199","Mirigama","Gampaha","Western",45444184.6386682
+"200","Moneragala","Moneragala","Uva",50772172.7716728
+"201","Mulatiyana","Matara","Southern",52897788.6852821
+"202","Mundal","Puttalam","North Western",35553148.6837924
+"203","Musali","Mannar","Northern",40947650.1922585
+"204","Muttur","Trincomalee","Eastern",36405896.0633511
+"205","Nachchaduwa","Anuradhapura","North Central",38788918.2129973
+"206","Nikaweratiya","Kurunegala","North Western",45095914.1879131
+"207","Nagoda","Galle","Southern",51713880.9087205
+"208","Nallur","Jaffna","Northern",31857389.4092356
+"209","Ninthavur","Ampara","Eastern",33673114.0611751
+"210","Nanattan","Mannar","Northern",31362351.1941826
+"211","Nuwara Eliya","Nuwara Eliya","Central",44512203.5609398
+"212","Narammala","Kurunegala","North Western",46694088.1283069
+"213","Nattandiya","Puttalam","North Western",44257891.7130114
+"214","Naula","Matale","Central",46901347.2640562
+"215","Navithanveli","Ampara","Eastern",38944297.6340165
+"216","Nawagattegama","Puttalam","North Western",44944569.2708333
+"217","Negombo","Gampaha","Western",27556463.8180519
+"218","Nuwaragam Palatha East","Anuradhapura","North Central",38105930.8469212
+"219","Neluwa","Galle","Southern",47911171.1393597
+"220","Oddusuddan","Mullaitivu","Northern",40477784.998063
+"221","Nivithigala","Rathnapura","Sabaragamuwa",47487715.1084011
+"222","Niyagama","Galle","Southern",48846327.0963271
+"223","Nochchiyagama","Anuradhapura","North Central",43225965.0564829
+"224","Nuwaragam Palatha Central","Anuradhapura","North Central",40228507.1728801
+"225","Okewela","Hambantota","Southern",53843695.561139
+"226","Opanayake","Rathnapura","Sabaragamuwa",52023538.1554307
+"227","Padavi Sri Pura","Trincomalee","Eastern",43437672.5
+"228","Pachchilaipalli","Kilinochchi","Northern",34245453.5690756
+"229","Wennappuwa","Puttalam","North Western",40762406.8106352
+"230","Padaviya","Anuradhapura","North Central",43719422.4567576
+"231","Padiyathalawa","Ampara","Eastern",45109959.3097889
+"232","Padukka","Colombo","Western",47398610.2642276
+"233","Paduwasnuwara West","Kurunegala","North Western",46945369.3999178
+"234","Palagala","Anuradhapura","North Central",44285608.5798928
+"235","Palindanuwara","Kalutara","Western",46751307.4712644
+"236","Pallama","Puttalam","North Western",47044970.4661558
+"237","Pallepola","Matale","Central",51100373.9035088
+"238","Panadura","Kalutara","Western",35841871.2594452
+"239","Palugaswewa","Anuradhapura","North Central",45543651.4822849
+"240","Pannala","Kurunegala","North Western",45739946.9354434
+"241","Panvila","Kandy","Central",45807080.4263566
+"242","Rasnayakapura","Kurunegala","North Western",45255901.9607843
+"243","Pasbage Korale","Kandy","Central",43681116.9284468
+"244","Pasgoda","Matara","Southern",52000297.8650138
+"245","Rathmalana","Colombo","Western",28103435.0416145
+"246","Ratnapura","Rathnapura","Sabaragamuwa",45243863.7350706
+"247","Passara","Badulla","Uva",52819028.8611544
+"248","Pathadumbara","Kandy","Central",48642553.4660767
+"249","Soranathota","Badulla","Uva",51949447.0096746
+"250","Pathahewaheta","Kandy","Central",49635749.7857755
+"251","Pelmadulla","Rathnapura","Sabaragamuwa",50708975.9259259
+"252","Sri Jayawardanapura Kotte","Colombo","Western",27435000
+"253","Pitabeddara","Matara","Southern",51771850.1048218
+"254","Tangalle","Hambantota","Southern",46605692.4305081
+"255","Polgahawela","Kurunegala","North Western",47209766.1935953
+"256","Thambuttegama","Anuradhapura","North Central",45447143.5452794
+"257","Polpithigama","Kurunegala","North Western",45705674.9276103
+"258","Poonakary","Kilinochchi","Northern",33251335.4607339
+"259","Thanamalvila","Moneragala","Uva",42824706.3611165
+"260","Poratheevu Pattu","Batticaloa","Eastern",36370010.0671701
+"261","Pottuvil","Ampara","Eastern",39606802.4126002
+"262","Pujapitiya","Kandy","Central",51899101.2773723
+"263","Puthukudiyiruppu","Mullaitivu","Northern",42645981.0723018
+"264","Puttalam","Puttalam","North Western",41690581.1983109
+"265","Thimbirigasyaya","Colombo","Western",22779502.7801888
+"266","Rajanganaya","Anuradhapura","North Central",42660563.4916606
+"267","Tissamaharama","Hambantota","Southern",41380283.1518609
+"268","Trincomalee Town and Gravets","Trincomalee","Eastern",40976358.2217974
+"269","Rambewa","Anuradhapura","North Central",41087916.9598874
+"270","Udubaddawa","Kurunegala","North Western",47316894.2831216
+"271","Rambukkana","Kegalle","Sabaragamuwa",50113785.1161534
+"272","Rattota","Matale","Central",48160683.9139344
+"273","Rideemaliyadda","Badulla","Uva",45839976.4812859
+"274","Ridigama","Kurunegala","North Western",52226706.7307692
+"275","Ruwanwella","Kegalle","Sabaragamuwa",48562586.6211431
+"276","Sainthamarathu","Ampara","Eastern",29352057.514245
+"277","Sammanthurai","Ampara","Eastern",36157996.4358452
+"278","Seethawaka","Colombo","Western",47634778.3041788
+"279","Seruvila","Trincomalee","Eastern",43280542.7828234
+"280","Sevanagala","Moneragala","Uva",44297997.4016333
+"281","Siyambalanduwa","Moneragala","Uva",45858620.0390634
+"282","Sooriyawewa","Hambantota","Southern",44719218.8092529
+"283","Thalawa","Anuradhapura","North Central",43923489.9316028
+"284","Thamankaduwa","Polonnaruwa","North Central",42720572.3636914
+"285","Thambalagamuwa","Trincomalee","Eastern",44792891.1570648
+"286","Udunuwara","Kandy","Central",48324669.0782422
+"287","Thawalama","Galle","Southern",48422060.8935129
+"288","Uhana","Ampara","Eastern",46183749.3527508
+"289","Thenmaradchy (Chavakachcheri)","Jaffna","Northern",32615526.2497435
+"290","Thihagoda","Matara","Southern",41867527.3224044
+"291","Thirappane","Anuradhapura","North Central",42104768.625192
+"292","Thirukkovil","Ampara","Eastern",39683230.8935545
+"293","Thumpane","Kandy","Central",53443908.4757835
+"294","Vadamaradchy North (Point Pedro)","Jaffna","Northern",32214735.7834822
+"295","Thunukkai","Mullaitivu","Northern",38835312.7263979
+"296","Udadumbara","Kandy","Central",46358258.744856
+"297","Udapalatha","Kandy","Central",46777990.5437352
+"298","Ukuwela","Matale","Central",48993659.6657633
+"299","Uva Paranagama","Badulla","Uva",49389551.4322917
+"300","Vadamaradchy East","Jaffna","Northern",25974213.0237908
+"301","Valikamam East (Kopay)","Jaffna","Northern",31138177.4523324
+"302","Valikamam South-West (Sandilipay)","Jaffna","Northern",33561360.9942051
+"303","Valikamam South (Uduvil)","Jaffna","Northern",35162015.3061225
+"304","Valikamam West (Chankanai)","Jaffna","Northern",32557193.0145419
+"305","Vavuniya","Vavuniya","Northern",40846707.8563996
+"306","Vavuniya North","Vavuniya","Northern",44178649.2839182
+"307","Vavuniya South","Vavuniya","Northern",41533602.6031112
+"308","Vengalacheddikulam","Vavuniya","Northern",42258001.1792453
+"309","Verugal Eachchilampattu","Trincomalee","Eastern",35202830.2295278
+"310","Walallavita","Kalutara","Western",47786113.7579405
+"311","Walapane","Nuwara Eliya","Central",47044137.0643432
+"312","Walasmulla","Hambantota","Southern",52726332.345191
+"313","Wanathavilluwa","Puttalam","North Western",42678597.9348618
+"314","Warakapola","Kegalle","Sabaragamuwa",49526200.9803922
+"315","Wariyapola","Kurunegala","North Western",44662726.4407693
+"316","Wattala","Gampaha","Western",35910180.2693281
+"317","Weeraketiya","Hambantota","Southern",52151610.0248293
+"318","Weerambugedara","Kurunegala","North Western",48527297.5352113
+"319","Weligama","Matara","Southern",46814076.3051531
+"320","Weligepola","Rathnapura","Sabaragamuwa",52078932.3863531
+"321","Welikanda","Polonnaruwa","North Central",40783114.8093662
+"322","Welimada","Badulla","Uva",46857641.4835165
+"323","Welioya","Mullaitivu","Northern",45921244.0758294
+"324","Welipitiya","Matara","Southern",47821170.2871931
+"325","Welivitiya-Divithura","Galle","Southern",48689865.4855643
+"326","Wellawaya","Moneragala","Uva",46781046.9890511
+"327","Wilgamuwa","Matale","Central",45133920.5252676
+"328","Yakkalamulla","Galle","Southern",51525849.5460441
+"329","Yatawatta","Matale","Central",54026025.4329004
+"330","Yatinuwara","Kandy","Central",48602155.0855992
+"331","Yatiyanthota","Kegalle","Sabaragamuwa",47664161.5791616
